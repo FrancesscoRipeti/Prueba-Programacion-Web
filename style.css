@@ -36,6 +36,10 @@ header{
   margin-right: 20px
 }
 
+.navbar-toggler{
+  margin-right: 10px;
+}
+
 #carouselExampleFade .carousel-content{
   bottom: 50%;
   left: 45%;
