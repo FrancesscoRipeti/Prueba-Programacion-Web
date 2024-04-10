@@ -5,7 +5,7 @@ body{
  border-radius: 50px; 
 }
 
-<<<<<<< HEAD
+
 #carouselExampleFade{
   max-width: 1600px; /* el proposito del max es que se adapte a los dispositivos el ancho y el alto (a las diferentes pantallas) */
   max-height: 600px; 
@@ -37,7 +37,7 @@ body{
 h1{
   font-size: 500px;
 }
-=======
+
 .card-body{
   margin-top: 25px;
   margin-bottom: 50px;
@@ -55,4 +55,3 @@ h1{
   margin-left: 5%;
   margin-top: 40px;
 }
->>>>>>> 4ef2438e96f5818f05fbc99ab108d5293b223c62
