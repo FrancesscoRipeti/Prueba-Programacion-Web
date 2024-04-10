@@ -12,9 +12,10 @@ nav{
 }
 
 #carouselExampleFade{
-  max-width: 1600px; /* el proposito del max es que se adapte a los dispositivos el ancho y el alto (a las diferentes pantallas) */
-  max-height: 600px; 
+  max-width: 1920px; /* el proposito del max es que se adapte a los dispositivos el ancho y el alto (a las diferentes pantallas) */
+  max-height: 1920px; 
   width: 100%;
+  height: 1080;
   margin: auto;
 }
 
@@ -52,6 +53,7 @@ header{
 }
 
 .card-body{
+  max-width: 80%;
   margin-top: 25px;
   margin-bottom: 50px;
   margin-left: 5px;
