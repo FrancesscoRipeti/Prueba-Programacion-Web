@@ -36,7 +36,6 @@ header{
   margin-right: 20px
 }
 
-
 #carouselExampleFade .carousel-content{
   bottom: 50%;
   left: 45%;
@@ -46,7 +45,6 @@ header{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
   color: white;
   font-size: 60px;
   text-shadow: 0 1px 2px rgba(0,0,0,.6); /* añade sombra en el texto */
@@ -62,7 +60,6 @@ header{
 }
 
 .row > .card{
-  
   max-width: 30%;
   min-width: 41%;
   margin-right: 3%;
@@ -75,7 +72,6 @@ header{
   text-align: center;
 }
 
-
 /**Movil**/
 
 @media (max-width: 767px) {
@@ -84,6 +80,7 @@ header{
   }
   .tablet {
       display: none;
+
   }
 }
 
