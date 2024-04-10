@@ -47,7 +47,9 @@ h1{
 }
 
 .row > .card{
-  width: 25%;
+  
+  max-width: 30%;
+  min-width: 41%;
   display: cover;
   margin-right: 3%;
   margin-left: 5%;
