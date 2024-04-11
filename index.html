@@ -16,9 +16,9 @@
         padding: 20px;
         position: fixed;
         top: 0;
-        left: -250px; /* Inicialmente oculto */
+         /* Inicialmente oculto */
         height: 100%;
-        transition: left 0.3s; /* Añade una transición suave al mostrar/ocultar */
+        transition: left 1.3s; /* Añade una transición suave al mostrar/ocultar */
       }
   
       /* Estilos para los enlaces del sidebar */
@@ -36,7 +36,7 @@
   
       /* Estilos para el botón de abrir el sidebar */
       #openSidebar {
-        position: fixed;
+        position: static;
         top: 20px;
         left: 20px;
         background-color: #333;
@@ -101,7 +101,7 @@
 
             <!-- Sidebar -->
             <div id="sidebar">
-              <a href="#" class="active">Home</a>
+              <a href="index.html" class="active">Home</a>
               <a href="#">About</a>
               <a href="#">Services</a>
               <a href="#">Contact</a>
@@ -111,9 +111,7 @@
             <div style="margin-left: 250px; padding: 20px;">
               <h2>Main Content</h2>
               <p>This is the main content area. You can put your main content here.</p>
-            </div>
-          </header>
-          
+
         <!-- inicio del carrucel -->
         <div id="carouselExampleFade" class="carousel slide carousel-fade" w-100>
             <div class="carousel-inner">
@@ -138,10 +136,10 @@
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Next</span>
             </button>
-          </#div>
+          </div>
           <!--fin del carrucel-->
-        
-
+        </div>
+        </header>
       <main>
         <center>
           <!--inicio de la invitacion a adoptar -->

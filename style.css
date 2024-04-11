@@ -122,9 +122,10 @@ main{
   margin-bottom: 100px;
   margin-left: 50px;
   margin-right: 50px;
-
+}
 .carousel-item > .img-fluid{   
     width: 1920px;
-    height: 735px;
-
+    height: 620px;
+    max-width: 100%;
+    min-width: 60%;
 }
