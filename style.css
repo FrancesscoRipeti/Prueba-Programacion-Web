@@ -13,7 +13,7 @@ nav{
   max-width: 1920px; /* el proposito del max es que se adapte a los dispositivos el ancho y el alto (a las diferentes pantallas) */
   max-height: 1920px; 
   width: 100%;
-  height: 1080;
+  height: 100%;
   margin: auto;
 }
 
@@ -35,7 +35,7 @@ header{
 }
 
 #carouselExampleFade .carousel-content{
-  bottom: 50%;
+  bottom: 100%;
   left: 45%;
 }
 #carouselExampleFade .carousel-content h1{
@@ -50,10 +50,9 @@ header{
 
 
 .card-body{
-  
-  max-width: 80%;
+  max-width: 100%;
   margin-top: 25px;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
   margin-left: 5px;
   margin-right: 5px;
   
@@ -61,7 +60,7 @@ header{
 
 .row > .card{
   
-  max-width: 30%;
+  max-width: 100%;
   min-width: 41%;
   margin-right: 3%;
   margin-left: 5%;
@@ -110,7 +109,7 @@ header{
 }
 
 .circular-image {
-  border-radius: 40%; /* Hace que la imagen sea circular */
+  border-radius: 30%; /* Hace que la imagen sea circular */
   overflow: hidden; /* Oculta cualquier contenido que exceda el radio */
   transition: border-radius 2.5s; /* Añade una transición suave al cambiar el radio */
 }
@@ -118,10 +117,9 @@ header{
   border-radius: 1; /* Cambia el radio a 0 para hacer la imagen cuadrada */
 }
 main{
-  margin-top: 100px;
-  margin-bottom: 100px;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-bottom: 50px;
+  margin-left: 25px;
+  margin-right: 25px;
 }
 .carousel-item > .img-fluid{   
     width: 1920px;
