@@ -34,10 +34,6 @@ header{
   margin-right: 20px
 }
 
-.navbar-toggler{
-  margin-right: 10px;
-}
-
 #carouselExampleFade .carousel-content{
   bottom: 50%;
   left: 45%;
@@ -126,6 +122,9 @@ main{
   margin-bottom: 100px;
   margin-left: 50px;
   margin-right: 50px;
+
+.carousel-item > .img-fluid{   
+    width: 1920px;
+    height: 735px;
+
 }
-
-
