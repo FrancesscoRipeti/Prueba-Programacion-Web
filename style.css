@@ -1,9 +1,7 @@
 body{
   background-color: darkgray;
 }
-.container-card-body{
- border-radius: 50px; 
-}
+
 nav{
   z-index: 999;
   max-width: 100%;
@@ -54,7 +52,9 @@ header{
   text-shadow: 0 1px 2px rgba(0,0,0,.6); /* añade sombra en el texto */
 }
 
+
 .card-body{
+  
   max-width: 80%;
   margin-top: 25px;
   margin-bottom: 50px;
@@ -64,6 +64,7 @@ header{
 }
 
 .row > .card{
+  
   max-width: 30%;
   min-width: 41%;
   margin-right: 3%;
@@ -111,3 +112,20 @@ header{
       display: none;
   }
 }
+
+.circular-image {
+  border-radius: 40%; /* Hace que la imagen sea circular */
+  overflow: hidden; /* Oculta cualquier contenido que exceda el radio */
+  transition: border-radius 2.5s; /* Añade una transición suave al cambiar el radio */
+}
+.circular-image:hover {
+  border-radius: 1; /* Cambia el radio a 0 para hacer la imagen cuadrada */
+}
+main{
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+
