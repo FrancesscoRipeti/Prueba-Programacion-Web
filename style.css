@@ -112,8 +112,7 @@ header{
   }
 }
 
-.img-fluid{
-    
+.carousel-item > .img-fluid{   
     width: 1920px;
     height: 735px;
 }
