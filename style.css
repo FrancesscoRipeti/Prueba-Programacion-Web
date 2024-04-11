@@ -111,3 +111,9 @@ header{
       display: none;
   }
 }
+
+.img-fluid{
+    
+    width: 1920px;
+    height: 735px;
+}
