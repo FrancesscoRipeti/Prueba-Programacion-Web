@@ -163,3 +163,8 @@ main{
 #texto-adoptar{
   align-content: center;
 }
+
+.card > .img{
+
+  width: 100px;
+}
