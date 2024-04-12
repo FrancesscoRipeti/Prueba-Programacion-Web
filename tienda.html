@@ -66,223 +66,152 @@
         </header>
         
         
-<main>
-            
-    <secti style="display: flex; flex-wrap: wrap;">
-            <div class="container-fluid" >
+
+        <main>  
+            <div class="container-fluid">
                 <div class="row">
-                    <!-- Menú a la izquierda -->
-                    <div class="col-md-3">
-                        <!-- Contenido del menú aquí -->
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Menú</h5>
-                                <ul class="list-unstyled">
-                                <li><a href="#">Alimento</a></li>
-                                <li><a href="#">Juguetes</a></li>
-                                <li><a href="#">Correas</a></li>
-                                <li><a href="#">Remedios</a></li>
+                    <!-- Sidebar -->
+                    <div class="col-12 col-md-3">
+                        <div class="sidebar">
+                            <!-- Contenido del sidebar -->
+                            <h2>Artículos</h2>
+                            <ul>
+                                <!-- Se pueden agrupar los artículos en subgrupos o categorías -->
+                                <li><a href="#articulo1">Artículo 1</a></li>
+                                <li><a href="#articulo2">Artículo 2</a></li>
+                                <!-- Puedes generar los enlaces de manera dinámica con un script si prefieres -->
+                                <!-- Ejemplo: -->
+                                <!-- <script>for(let i=1; i<=55; i++) {document.write(`<li><a href="#articulo${i}">Artículo ${i}</a></li>`)}</script> -->
                             </ul>
-                            </div>
                         </div>
                     </div>
-
-
-
-        <div class="col-md-9">
-            <div class="row row-cols-1 row-cols-md-5 g-4">
-                <!-- Primera tarjeta -->
-                <div class="col-md-3  style=" flex-flow: row wrap;">
-                    <div class="card mb-1">
-                        <div class="row g-0">
-                            <div class="col-md-4">
-                                <img src="img/collar 1.jpg" class="img-fluid wrap" alt="...">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-                                    <button type="button" class="btn btn-primary">Agregar al carrito</button>
+        
+                    <!-- Contenido principal -->
+                    <div class="col-12 col-md-9">
+                        <div class="container">
+                            <div class="row">
+                                <!-- Primer bloque -->
+                                <div id="articulo1" class="col-12 col-sm-6 col-md-4">
+                                    <div class="card mb-5">
+                                        <img src="img/articulo1.jpg" class="card-img-top img-fluid" alt="Artículo 1">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Artículo 1</h5>
+                                            <p class="card-text">Descripción del artículo 1.</p>
+                                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalCarrito" data-precio="10.99">Agregar al carrito</button>
+                                        </div>
+                                    </div>
                                 </div>
+                                <div id="articulo1" class="col-12 col-sm-6 col-md-4">
+                                    <div class="card mb-5">
+                                        <img src="img/articulo1.jpg" class="card-img-top img-fluid" alt="Artículo 1">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Artículo 1</h5>
+                                            <p class="card-text">Descripción del artículo 1.</p>
+                                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalCarrito" data-precio="10.99">Agregar al carrito</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="articulo1" class="col-12 col-sm-6 col-md-4">
+                                    <div class="card mb-5">
+                                        <img src="img/articulo1.jpg" class="card-img-top img-fluid" alt="Artículo 1">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Artículo 1</h5>
+                                            <p class="card-text">Descripción del artículo 1.</p>
+                                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalCarrito" data-precio="10.99">Agregar al carrito</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="articulo1" class="col-12 col-sm-6 col-md-4">
+                                    <div class="card mb-5">
+                                        <img src="img/articulo1.jpg" class="card-img-top img-fluid" alt="Artículo 1">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Artículo 1</h5>
+                                            <p class="card-text">Descripción del artículo 1.</p>
+                                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalCarrito" data-precio="10.99">Agregar al carrito</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="articulo1" class="col-12 col-sm-6 col-md-4">
+                                    <div class="card mb-5">
+                                        <img src="img/articulo1.jpg" class="card-img-top img-fluid" alt="Artículo 1">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Artículo 1</h5>
+                                            <p class="card-text">Descripción del artículo 1.</p>
+                                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalCarrito" data-precio="10.99">Agregar al carrito</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="articulo1" class="col-12 col-sm-6 col-md-4">
+                                    <div class="card mb-5">
+                                        <img src="img/articulo1.jpg" class="card-img-top img-fluid" alt="Artículo 1">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Artículo 1</h5>
+                                            <p class="card-text">Descripción del artículo 1.</p>
+                                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalCarrito" data-precio="10.99">Agregar al carrito</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="articulo1" class="col-12 col-sm-6 col-md-4">
+                                    <div class="card mb-5">
+                                        <img src="img/articulo1.jpg" class="card-img-top img-fluid" alt="Artículo 1">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Artículo 1</h5>
+                                            <p class="card-text">Descripción del artículo 1.</p>
+                                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalCarrito" data-precio="10.99">Agregar al carrito</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="articulo1" class="col-12 col-sm-6 col-md-4">
+                                    <div class="card mb-5">
+                                        <img src="img/articulo1.jpg" class="card-img-top img-fluid" alt="Artículo 1">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Artículo 1</h5>
+                                            <p class="card-text">Descripción del artículo 1.</p>
+                                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalCarrito" data-precio="10.99">Agregar al carrito</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="articulo1" class="col-12 col-sm-6 col-md-4">
+                                    <div class="card mb-5">
+                                        <img src="img/articulo1.jpg" class="card-img-top img-fluid" alt="Artículo 1">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Artículo 1</h5>
+                                            <p class="card-text">Descripción del artículo 1.</p>
+                                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalCarrito" data-precio="10.99">Agregar al carrito</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="articulo1" class="col-12 col-sm-6 col-md-4">
+                                    <div class="card mb-5">
+                                        <img src="img/articulo1.jpg" class="card-img-top img-fluid" alt="Artículo 1">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Artículo 1</h5>
+                                            <p class="card-text">Descripción del artículo 1.</p>
+                                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalCarrito" data-precio="10.99">Agregar al carrito</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="articulo1" class="col-12 col-sm-6 col-md-4">
+                                    <div class="card mb-5">
+                                        <img src="img/articulo1.jpg" class="card-img-top img-fluid" alt="Artículo 1">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Artículo 1</h5>
+                                            <p class="card-text">Descripción del artículo 1.</p>
+                                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalCarrito" data-precio="10.99">Agregar al carrito</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Repetir este bloque 29 veces más -->
+                                <!-- ... y así sucesivamente hasta el artículo 30 -->
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- Segunda tarjeta -->
-                <div class="col">
-                    <div class="card mb-3" style="max-width: 540px;">
-                        <div class="row g-0">
-                            <div class="col-md-4">
-                                <img src="img/collar 1.jpg" class="img-fluid rounded-start" alt="...">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-                                    <button type="button" class="btn btn-primary">Agregar al carrito</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Tercera tarjeta -->
-                <div class="col">
-                    <div class="card mb-3" style="max-width: 540px;">
-                        <div class="row g-0">
-                            <div class="col-md-4">
-                                <img src="img/collar 1.jpg" class="img-fluid rounded-start" alt="...">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-                                    <button type="button" class="btn btn-primary">Agregar al carrito</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Cuarta tarjeta -->
-                <div class="col">
-                    <div class="card mb-3" style="max-width: 540px;">
-                        <div class="row g-0">
-                            <div class="col-md-4">
-                                <img src="img/collar 1.jpg" class="img-fluid rounded-start" alt="...">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-                                    <button type="button" class="btn btn-primary">Agregar al carrito</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Quinta tarjeta -->
-                <div class="col">
-                    <div class="card mb-3" style="max-width: 540px;">
-                        <div class="row g-0">
-                            <div class="col-md-4">
-                                <img src="img/collar 1.jpg" class="img-fluid rounded-start" alt="...">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-                                    <button type="button" class="btn btn-primary">Agregar al carrito</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            </div>
+            
 
-                <!-- SEGUNDA FILA -->
-                <!-- Primera tarjeta -->
-                <div class="col">
-                    <div class="card mb-3" style="max-width: 540px;">
-                        <div class="row g-0">
-                            <div class="col-md-4">
-                                <img src="img/collar 1.jpg" class="img-fluid rounded-start" alt="...">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-                                    <button type="button" class="btn btn-primary">Agregar al carrito</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- SEGUNDA FILA -->
-                <!-- Segunda tarjeta -->
-                <div class="col">
-                    <div class="card mb-3" style="max-width: 540px;">
-                        <div class="row g-0">
-                            <div class="col-md-4">
-                                <img src="img/collar 1.jpg" class="img-fluid rounded-start" alt="...">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-                                    <button type="button" class="btn btn-primary">Agregar al carrito</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- SEGUNDA FILA -->
-                <!-- Tercera tarjeta -->
-                <div class="col">
-                    <div class="card mb-3" style="max-width: 540px;">
-                        <div class="row g-0">
-                            <div class="col-md-4">
-                                <img src="img/collar 1.jpg" class="img-fluid rounded-start" alt="...">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-                                    <button type="button" class="btn btn-primary">Agregar al carrito</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- SEGUNDA FILA -->
-                <!-- Cuarta tarjeta -->
-                <div class="col">
-                    <div class="card mb-3" style="max-width: 540px;">
-                        <div class="row g-0">
-                            <div class="col-md-4">
-                                <img src="img/collar 1.jpg" class="img-fluid rounded-start" alt="...">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-                                    <button type="button" class="btn btn-primary">Agregar al carrito</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- SEGUNDA FILA -->
-                <!-- Quinta tarjeta -->
-                <div class="col">
-                    <div class="card mb-3" style="max-width: 540px;">
-                        <div class="row g-0">
-                            <div class="col-md-4">
-                                <img src="img/collar 1.jpg" class="img-fluid rounded-start" alt="...">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-                                    <button type="button" class="btn btn-primary">Agregar al carrito</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
+            </main>
 
                 <nav aria-label="Page navigation example">
                     <ul class="pagination justify-content-center">
@@ -298,53 +227,10 @@
                     </ul>
                   </nav>
                 </section>
-                </main>
+                
             
-                  <!---->
+                  <!--footer-->
     
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                   <footer class="container py-5">
                     <div class="row">
                       <div class="col-12 col-md">
@@ -354,44 +240,97 @@
                       <div class="col-6 col-md">
                         <h5>Features</h5>
                         <ul class="list-unstyled text-small">
-                          <li><a class="link-secondary text-decoration-none" href="#">Cool stuff</a></li>
-                          <li><a class="link-secondary text-decoration-none" href="#">Random feature</a></li>
-                          <li><a class="link-secondary text-decoration-none" href="#">Team feature</a></li>
-                          <li><a class="link-secondary text-decoration-none" href="#">Stuff for developers</a></li>
-                          <li><a class="link-secondary text-decoration-none" href="#">Another one</a></li>
-                          <li><a class="link-secondary text-decoration-none" href="#">Last time</a></li>
+                          <li><a class="link-secondary text-decoration-none" href="#">Proximamente</a></li>
+                          <li><a class="link-secondary text-decoration-none" href="#">Proximamente</a></li>
+                          <li><a class="link-secondary text-decoration-none" href="#">Proximamente</a></li>
+                          <li><a class="link-secondary text-decoration-none" href="#">Proximamente</a></li>
+                          <li><a class="link-secondary text-decoration-none" href="#">Proximamente</a></li>
+                          <li><a class="link-secondary text-decoration-none" href="#">Proximamente</a></li>
+    
                         </ul>
                       </div>
                       <div class="col-6 col-md">
                         <h5>Resources</h5>
                         <ul class="list-unstyled text-small">
-                          <li><a class="link-secondary text-decoration-none" href="#">Resource name</a></li>
-                          <li><a class="link-secondary text-decoration-none" href="#">Resource</a></li>
-                          <li><a class="link-secondary text-decoration-none" href="#">Another resource</a></li>
-                          <li><a class="link-secondary text-decoration-none" href="#">Final resource</a></li>
+                          <li><a class="link-secondary text-decoration-none" href="#">Proximamente</a></li>
+                          <li><a class="link-secondary text-decoration-none" href="#">Proximamente</a></li>
+                          <li><a class="link-secondary text-decoration-none" href="#">Proximamente</a></li>
+                          <li><a class="link-secondary text-decoration-none" href="#">Proximamente</a></li>
+                          <li><a class="link-secondary text-decoration-none" href="#">Proximamente</a></li>
+                          >
                         </ul>
                       </div>
                       <div class="col-6 col-md">
                         <h5>Resources</h5>
                         <ul class="list-unstyled text-small">
-                          <li><a class="link-secondary text-decoration-none" href="#">Business</a></li>
-                          <li><a class="link-secondary text-decoration-none" href="#">Education</a></li>
-                          <li><a class="link-secondary text-decoration-none" href="#">Government</a></li>
-                          <li><a class="link-secondary text-decoration-none" href="#">Gaming</a></li>
+                          <li><a class="link-secondary text-decoration-none" href="#">Proximamente</a></li>
+                          <li><a class="link-secondary text-decoration-none" href="#">Proximamente</a></li>
+                          <li><a class="link-secondary text-decoration-none" href="#">Proximamente</a></li>
+                          <li><a class="link-secondary text-decoration-none" href="#">Proximamente</a></li>
+    
                         </ul>
                       </div>
                       <div class="col-6 col-md">
                         <h5>About</h5>
                         <ul class="list-unstyled text-small">
-                          <li><a class="link-secondary text-decoration-none" href="#">Team</a></li>
-                          <li><a class="link-secondary text-decoration-none" href="#">Locations</a></li>
-                          <li><a class="link-secondary text-decoration-none" href="#">Privacy</a></li>
-                          <li><a class="link-secondary text-decoration-none" href="#">Terms</a></li>
+                          <li><a class="link-secondary text-decoration-none" href="#">Proximamente</a></li>
+                          <li><a class="link-secondary text-decoration-none" href="#">Proximamente</a></li>
+                          <li><a class="link-secondary text-decoration-none" href="#">Proximamente</a></li>
                         </ul>
                       </div>
                     </div>
                   </footer>
 
+
+
+
+
+
+
+
+
+
+<!-- modañ-->
+<!-- Modal -->
+    <div class="modal fade" id="modalCarrito" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Carrito de Compras</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Contenido dinámico generado por JavaScript -->
+                    <p id="articulosSeleccionados"></p>
+                    <p id="total"></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--modal script-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        
+        <script>
+            // Variable para almacenar el total de la compra
+            let total = 0;
+    
+            // JavaScript para manejar el evento de clic en "Agregar al carrito"
+            document.querySelectorAll('.btn-primary').forEach(button => {
+                button.addEventListener('click', () => {
+                    const precio = parseFloat(button.getAttribute('data-precio'));
+                    // Lógica para agregar el artículo al carrito (puedes almacenar la información en un arreglo o base de datos)
+                    // Aquí solo sumamos el precio al total
+                    total += precio;
+                    // Actualizar el contenido del modal con el total
+                    document.getElementById('total').textContent = `Total: $${total.toFixed(2)}`;
+                });
+            });
+        </script>
              
 
 

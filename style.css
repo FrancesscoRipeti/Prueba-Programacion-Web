@@ -6,14 +6,16 @@ nav{
   z-index: 999;
   max-width: 100%;
   min-width: 30%;
-  margin-bottom: auto;
+  margin-bottom: 10px;
+  
 }
 
 #carouselExampleFade{
-  max-width: 1920px; /* el proposito del max es que se adapte a los dispositivos el ancho y el alto (a las diferentes pantallas) */ 
   width: 100%;
-  height: 80%;
-  margin: auto;
+  height: 600px;
+  min-width: 100%; /* el proposito del max es que se adapte a los dispositivos el ancho y el alto (a las diferentes pantallas) */
+  min-height: 50%;
+  margin-bottom: cover;
 }
 
 header{
@@ -25,15 +27,18 @@ header{
   font-size: 25px;
   font-weight: 500;
   background-color: rgb(252, 246, 195);
+  
 }
 
 #navbarPrincipal .navbar-brand{
   font-size: 40px;
   font-weight: 500;
   margin-right: 20px
+  
 }
 
 #carouselExampleFade .carousel-content{
+  bottom: 50%;
   left: 45%;
 }
 #carouselExampleFade .carousel-content h1{
@@ -73,22 +78,24 @@ h2{
   text-align: center;
   padding-top: 3%;
 }
-
 .card-body{
-  max-width: 100%;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  
+  max-width: 80%;
+  min-height: 20%;
+  margin-top: 25px;
+  margin-bottom: 70px;
   margin-left: 5px;
   margin-right: 5px;
   
 }
 
 .row > .card{
-  max-width: 100%;
+  
+  max-width: 30%;
   min-width: 41%;
   margin-right: 3%;
   margin-left: 5%;
-
+  margin-top: 40px;
 }
 
 .resolucion {
@@ -133,7 +140,7 @@ h2{
 }
 
 .circular-image {
-  border-radius: 30%; /* Hace que la imagen sea circular */
+  border-radius: 40%; /* Hace que la imagen sea circular */
   overflow: hidden; /* Oculta cualquier contenido que exceda el radio */
   transition: border-radius 2.5s; /* Añade una transición suave al cambiar el radio */
 }
@@ -141,13 +148,18 @@ h2{
   border-radius: 1; /* Cambia el radio a 0 para hacer la imagen cuadrada */
 }
 main{
-  margin-bottom: 10px;
-  margin-left: 25px;
-  margin-right: 25px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 .carousel-item > .img-fluid{   
     width: 1920px;
     height: 620px;
     max-width: 100%;
     min-width: 60%;
+
+}
+#texto-adoptar{
+  align-content: center;
 }
