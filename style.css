@@ -168,3 +168,19 @@ main{
 
   width: 100px;
 }
+
+#articulo1 img{
+  width: 640px;
+  height: 300px;
+  display: cover;
+}
+
+
+#colaborador{
+  width: 50%;
+  height: 50%;
+  display: flex;
+  flex-wrap: nowrap;
+  margin-right: 20%;
+
+}
