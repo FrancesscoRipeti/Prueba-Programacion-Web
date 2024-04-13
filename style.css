@@ -51,6 +51,7 @@ header{
   text-shadow: 0 1px 2px rgba(0,0,0,.6); /* añade sombra en el texto */
 }
 
+/* Carrusel de los otros productos que te podrian interesar*/
 #carouselExampleAutoplaying .carousel-inner > img{
   width: 50px;
   height: 20%;
@@ -78,6 +79,8 @@ h2{
   text-align: center;
   padding-top: 3%;
 }
+/* Fin del carrusel*/
+
 .card-body{
   
   max-width: 80%;
@@ -183,4 +186,8 @@ main{
   flex-wrap: nowrap;
   margin-right: 20%;
 
+}
+
+#invitacion-adoptar{
+  margin-top: 5%;
 }

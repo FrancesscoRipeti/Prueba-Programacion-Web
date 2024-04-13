@@ -21,7 +21,7 @@
 </head>
 <body >
   
-  <div class="resolucion">
+<!--  <div class="resolucion">
     <div class="desktop">
         <h1>Esto es un ordenador</h1>
     </div>
@@ -31,8 +31,9 @@
     <div class="movil">
         <h1>Esto es un movil</h1>
     </div>
-    </div>
+    </div> -->
 
+    <!--  Navbar, en la cual se puede acceder  diferentes vistas como principal, tienda, adopcion, nosotros y el carro  -->
     <header style="background-color: #ffffff;">
         <nav class="navbar navbar-expand-lg" id="navbarPrincipal" style="background-color: #73AAA9;">
           <div class="container d-flex justify-content-center w-100" style="background-color: #73AAA9;">
@@ -66,20 +67,134 @@
                       <i class="fas fa-shopping-cart"></i>
                   </a>
                 </div>
+              </div>
+          </div>
+        </nav>
+        <!--fin del navbar-->
+
+    <!--inicio de la invitacion a adoptar -->  
+    <main>
+      <center>
+        <div class="row g-0 position-relative" id="invitacion-adoptar">
+          <div class="col-md-6 mb-md-0 p-md-4" id="img-adoptar">
+            <!-- Añade la clase "circular-image" a la imagen -->
+            <img src="img/skin-gato-adoptar(6).jpg" class="w-100 circular-image" alt="...">
+          </div>
+          <div class="col-md-6 p-2 ps-md-0 "id="texto-adoptar">
+            <h2 class="mt-0">Adopta un amigo felino</h2>
+            <p>Conoce a Whiskers, un adorable gatito de 2 años en busca de un hogar cariñoso. Whiskers es juguetón, curioso y le encanta recibir mimos. Está esterilizado, vacunado y listo para ser parte de una familia que lo ame y lo cuide para siempre.</p>
+            <a href="img/adopcion_gato.jpg" class="btn btn-primary stretched-link">Agendar Cita</a>
+          </div>
+        </div>
+        <!--  reverse       -->
+        <div class="row g-0 position-relative" id="invitacion-adoptar">
+          <div class="col-md-6 p-5 ps-md-0" id="texto-adoptar">
+              <!-- Mueve el título antes de la imagen -->
+              <h2 class="mt-0">Columns with stretched link - Adopción de Perro</h2>
+              <p>¡Conoce a nuestro adorable amigo en busca de un hogar!</p>
+              <p>Este es Rocky, un encantador Labrador Retriever de 3 años de edad. Rocky es un perro juguetón y amigable que ama pasar tiempo al aire libre y jugar con pelotas. Él está entrenado en casa, esterilizado y completamente vacunado. ¡Está listo para encontrar su familia para siempre!</p>
+              <a href="img/adopcion.jpg" class="btn btn-primary stretched-link">Agendar Hora</a>
+            </div>
+          <div class="col-md-6 mb-md-0 p-md-4" id="img-adoptar">
+            <!-- Añade la clase "circular-image" a la imagen -->
+            <img src="img/perro-car1 (17).jpg" class="w-100 circular-image" alt="..." id="circularImage">
+          </div>
+        </div>
+        <div class="row g-0 position-relative" id="invitacion-adoptar">
+          <div class="col-md-6 mb-md-0 p-md-4" id="img-adoptar">
+            <!-- Añade la clase "circular-image" a la imagen -->
+            <img src="img/skin-toruga-adoptar(2).jpg" class="w-100 circular-image" alt="...">
+          </div>
+          <div class="col-md-6 p-2 ps-md-0" id="texto-adoptar">
+            <h2 class="mt-0">Encuentra a tu nuevo amigo reptil</h2>
+            <p>Te presentamos a Shelley, una tortuga terrestre de 5 años de edad en busca de un hogar amoroso. Shelley es una tortuga tranquila y curiosa que disfruta pasar su tiempo explorando su entorno. Ella está buscando un lugar seguro y confortable para vivir y disfrutar de la vida al máximo.</p>
+            <a href="img/adopcion_tortuga.jpg" class="btn btn-primary stretched-link">Agendar Visita</a>
+          </div>
+        </div>
+        <!--  reverse       -->
+        <div class="row g-0 position-relative" id="invitacion-adoptar">
+          <div class="col-md-6 p-5 ps-md-0" id="texto-adoptar">
+              <!-- Mueve el título antes de la imagen -->
+              <h2 class="mt-0">Columns with stretched link - Adopción de Perro</h2>
+              <p>¡Conoce a nuestro adorable amigo en busca de un hogar!</p>
+              <p>Este es Rocky, un encantador Labrador Retriever de 3 años de edad. Rocky es un perro juguetón y amigable que ama pasar tiempo al aire libre y jugar con pelotas. Él está entrenado en casa, esterilizado y completamente vacunado. ¡Está listo para encontrar su familia para siempre!</p>
+              <a href="#" class="btn btn-primary stretched-link">Agendar Hora</a>    
+            </div>
+          <div class="col-md-6 mb-md-0 p-md-4" id="img-adoptar">
+            <!-- Añade la clase "circular-image" a la imagen -->
+            <img src="img/skin-de-hamster.jpg" class="w-100 circular-image" alt="..." id="circularImage">
+          </div>
+        </div>
+      </center>
+    </main>
+    <!--fin de la invitacion a adoptar -->
+              
+    <!--botones de cambiar paginas del 1 al 3-->
+    <nav aria-label="Page navigation example">
+      <ul class="pagination justify-content-center">
+        <li class="page-item disabled">
+          <a class="page-link">Previous</a>
+        </li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item">
+          <a class="page-link" href="#">Next</a>
+        </li>
+      </ul>
+    </nav>
+
+
+    <h2>Productos que te podrian interesar</h2>
+    <div id="carouselExampleAutoplaying" class="carousel slid" data-bs-ride="carousel">
+      <div class="carousel-inner  border">
+        <div class="carousel-item active">
+          <div class="row justify-content-center ">
+            <div class="col-md border">
+              <img src="img/toy1.png" class="d-block w-100 border" alt="...">
+              <p>Mueñeco Spidy</p>
+              <a href="#" class="btn btn-primary justify-content-center ">Ver</a>
+            </div>
+            <div class="col-md border">
+              <img src="img/toy2.jpg" class="d-block w-100 border" alt="...">
+              <p>Basket Toy</p>
+              <a href="#" class="btn btn-primary justify-content-center ">Ver</a>
+            </div>
+            <div class="col-md border">
+              <img src="img/toy3.png" class="d-block w-100 border" alt="...">
+              <p>The Bad Boys.</p>
+              <a href="#" class="btn btn-primary justify-content-center ">Ver</a>
+            </div>
+            <div class="col-md border">
+              <img src="img/toy1.png" class="d-block w-100 border" alt="...">
+              <p>Muñeco Spidy 2.</p>
+              <a href="#" class="btn btn-primary justify-content-center ">Ver</a>
+            </div>
+            <div class="col-md border">
+              <img src="img/toy2.jpg" class="d-block w-100 border" alt="...">
+              <p>Basket Toy [Medium].</p>
+              <a href="#" class="btn btn-primary justify-content-center ">Ver</a>
+            </div>
+            <div class="col-md border">
+              <img src="img/toy3.png" class="d-block w-100 border" alt="...">
+              <p>The Bad Boys Returns.</p>
+              <a href="#" class="btn btn-primary justify-content-center ">Ver</a>
+            </div>
+            <div class="col-md border">
+              <img src="img/toy1.png" class="d-block w-100 border" alt="...">
+              <p>Mueñco Spidy 2.1</p>
+              <a href="#" class="btn btn-primary justify-content-center ">Ver</a>
             </div>
         </div>
-      </nav>
-      
-        
-        <!--fin del navbar-->
-      <main>
-        <center>
-          <!--inicio de la invitacion a adoptar -->
-          <div class="row g-0 position-relative" id="invitacion-adoptar">
-            <div class="col-md-6 mb-md-0 p-md-4" id="img-adoptar">
-              <!-- Añade la clase "circular-image" a la imagen -->
-              <img src="img/skin-gato-adoptar(6).jpg" class="w-100 circular-image" alt="...">
+      </div>
+      <div class="carousel-item">
+        <div class="row justify-content-center">
+            <div class="col-md border">
+              <img src="img/toy4.jpg" class="d-block w-100 border" alt="...">
+              <p>Peluche Tiger</p>
+              <a href="#" class="btn btn-primary justify-content-center ">Ver</a>
             </div>
+<<<<<<< Updated upstream
             <div class="col-md-6 p-2 ps-md-0 "id="texto-adoptar">
               <h2 class="mt-0">Adopta un amigo felino</h2>
               <p>¡Conoce a nuestro adorable amigo en busca de un hogar!</p>
@@ -102,16 +217,24 @@
             <div class="col-md-6 mb-md-0 p-md-4" id="img-adoptar">
               <!-- Añade la clase "circular-image" a la imagen -->
               <img src="img/perro-car1 (17).jpg" class="w-100 circular-image" alt="..." id="circularImage">
+=======
+            <div class="col-md border">
+              <img src="img/toy5.jpg" class="d-block w-100 border" alt="...">
+              <p>Moneky Muñeco</p>
+              <a href="#" class="btn btn-primary justify-content-center ">Ver</a>
             </div>
-          </div>
-          
-          
-          <!--inicio de la invitacion a adoptar -->
-          <div class="row g-0 position-relative" id="invitacion-adoptar">
-            <div class="col-md-6 mb-md-0 p-md-4" id="img-adoptar">
-              <!-- Añade la clase "circular-image" a la imagen -->
-              <img src="img/skin-toruga-adoptar(2).jpg" class="w-100 circular-image" alt="...">
+            <div class="col-md border">
+              <img src="img/toy6.jpg" class="d-block w-100 border" alt="...">
+              <p>Football Toy</p>
+              <a href="#" class="btn btn-primary justify-content-center ">Ver</a>
+>>>>>>> Stashed changes
             </div>
+            <div class="col-md border">
+              <img src="img/toy7.jpg" class="d-block w-100 border" alt="...">
+              <p>Pelota Anti-Stress</p>
+              <a href="#" class="btn btn-primary justify-content-center ">Ver</a>
+            </div>
+<<<<<<< Updated upstream
             <div class="col-md-6 p-2 ps-md-0" id="texto-adoptar">
               <h2 class="mt-0">Encuentra a tu nuevo amigo reptil</h2>
               <p>¡Conoce a nuestro adorable amigo en busca de un hogar!</p>
@@ -227,6 +350,35 @@
 
               <!---->
 
+=======
+            <div class="col-md border">
+              <img src="img/toy8.jpg" class="d-block w-100 border" alt="...">
+              <p>Banana Purple</p>
+              <a href="#" class="btn btn-primary justify-content-center ">Ver</a>
+            </div>
+            <div class="col-md border">
+              <img src="img/toy9.jpg" class="d-block w-100 border" alt="...">
+              <p>Oso Dona</p>
+              <a href="#" class="btn btn-primary justify-content-center ">Ver</a>
+            </div>
+            <div class="col-md border">
+              <img src="img/toy10.jpg" class="d-block w-100 border" alt="...">
+              <p>Cocodrilo Peluche</p>
+              <a href="#" class="btn btn-primary justify-content-center ">Ver</a>
+            </div>
+        </div>
+    </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!--Fin Carrusel de Otros productos -->
+>>>>>>> Stashed changes
 
               <footer class="container py-5">
                 <div class="row">
