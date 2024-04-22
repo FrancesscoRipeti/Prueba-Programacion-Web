@@ -106,7 +106,7 @@ text-align: center;
 }
 
 #holl {
-    position: relative;
+    position: relative; 
     left: 0px;
     right: 0px;
     top: 30px;
@@ -116,7 +116,7 @@ text-align: center;
 }
 
 .inner {
-    position: absolute;
+    position: absolute; /** posicionar un elemento en relación con el contenedor más cercano que sea de una posicion distinta de static. Otros elementos se comportan como si el elemento con position: absolute no estuviera allí.**/
     top: 10px;
     left: 20px;
     width: 130px;
@@ -125,7 +125,7 @@ text-align: center;
 }
 
 .inner2 {
-    position: relative;
+    position: relative; /**Posiciona el elemento ocupando el right,left, top, bottom sin que afecte los demás elementos, como si el elemento principal estuviera en su posición original*/
     top: 10px;
     left: 5px;
     width: 165px;
