@@ -191,3 +191,27 @@ main{
 #invitacion-adoptar{
   margin-top: 5%;
 }
+
+#holl {
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+}
+
+.inner {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  width: 130px;
+  height: 50px;
+  background-color: green;
+}
+
+.inner2 {
+  position: relative;
+  top: 10px;
+  left: 5px;
+  width: 165px;
+  height: 175px;
+  background-color: red;
+}
