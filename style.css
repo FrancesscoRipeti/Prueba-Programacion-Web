@@ -1,99 +1,107 @@
-body{
+*{
+  padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+body {
   background-color: #ffffff;
 }
 
-nav{
-  z-index: 999;
+nav {
   max-width: 100%;
-  min-width: 30%;
-  margin-bottom: 10px;
-  
+  min-width: 50%;
 }
 
-#carouselExampleFade{
+#carouselExampleFade {
   width: 100%;
   height: 600px;
-  min-width: 100%; /* el proposito del max es que se adapte a los dispositivos el ancho y el alto (a las diferentes pantallas) */
+  min-width: 100%;
+  /* el proposito del max es que se adapte a los dispositivos el ancho y el alto (a las diferentes pantallas) */
   min-height: 50%;
   margin-bottom: cover;
 }
 
-header{
+header {
   width: 100%;
 }
 
-#navbarPrincipal{
+#navbarPrincipal {
   height: 70px;
   font-size: 25px;
   font-weight: 500;
   background-color: rgb(252, 246, 195);
-  
+
 }
 
-#navbarPrincipal .navbar-brand{
+#navbarPrincipal .navbar-brand {
   font-size: 40px;
   font-weight: 500;
   margin-right: 20px
-  
 }
 
-#carouselExampleFade .carousel-content{
+#carouselExampleFade .carousel-content {
   bottom: 50%;
   left: 45%;
 }
-#carouselExampleFade .carousel-content h1{
+
+#carouselExampleFade .carousel-content h1 {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
   font-size: 60px;
-  text-shadow: 0 1px 2px rgba(0,0,0,.6); /* añade sombra en el texto */
+  text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+  /* añade sombra en el texto */
 }
 
 /* Carrusel de los otros productos que te podrian interesar*/
-#carouselExampleAutoplaying .carousel-inner > img{
+#carouselExampleAutoplaying .carousel-inner>img {
   width: 50px;
   height: 20%;
- 
+
 }
 
-#carouselExampleAutoplaying .carousel-inner{
+#carouselExampleAutoplaying .carousel-inner {
   height: 250px;
   max-width: 70%;
   margin: auto;
-  
+
 }
 
-#carouselExampleAutoplaying .carousel-item .btn{
+#carouselExampleAutoplaying .carousel-item .btn {
   display: flex;
   text-align: center;
 
-  
+
 }
-#carouselExampleAutoplaying .carousel-item p{
+
+#carouselExampleAutoplaying .carousel-item p {
   text-align: center;
-  
+
 }
-h2{
+
+h2 {
   text-align: center;
   padding-top: 3%;
 }
+
 /* Fin del carrusel*/
 
-.card-body{
-  
+.card-body {
+
   max-width: 80%;
   min-height: 20%;
   margin-top: 25px;
   margin-bottom: 70px;
   margin-left: 5px;
   margin-right: 5px;
-  
+
 }
 
-.row > .card{
-  
+.row>.card {
+
   max-width: 30%;
   min-width: 41%;
   margin-right: 3%;
@@ -101,19 +109,15 @@ h2{
   margin-top: 40px;
 }
 
-.resolucion {
-  width: 99%;
-  text-align: center;
-}
-
 /**Movil**/
 
 @media (max-width: 767px) {
   .desktop {
-      display: none;
+    display: none;
   }
+
   .tablet {
-      display: none;
+    display: none;
 
   }
 }
@@ -123,10 +127,11 @@ h2{
 
 @media (min-width: 768px) and (max-width: 990px) {
   .desktop {
-      display: none;
+    display: none;
   }
+
   .movil {
-      display: none;
+    display: none;
   }
 }
 
@@ -135,51 +140,59 @@ h2{
 
 @media (min-width: 991px) {
   .tablet {
-      display: none;
+    display: none;
   }
+
   .movil {
-      display: none;
+    display: none;
   }
 }
 
 .circular-image {
-  border-radius: 40%; /* Hace que la imagen sea circular */
-  overflow: hidden; /* Oculta cualquier contenido que exceda el radio */
-  transition: border-radius 2.5s; /* Añade una transición suave al cambiar el radio */
+  border-radius: 40%;
+  /* Hace que la imagen sea circular */
+  overflow: hidden;
+  /* Oculta cualquier contenido que exceda el radio */
+  transition: border-radius 2.5s;
+  /* Añade una transición suave al cambiar el radio */
 }
+
 .circular-image:hover {
-  border-radius: 1; /* Cambia el radio a 0 para hacer la imagen cuadrada */
+  border-radius: 1;
+  /* Cambia el radio a 0 para hacer la imagen cuadrada */
 }
-main{
+
+main {
   margin-top: 100px;
   margin-bottom: 100px;
   margin-left: 50px;
   margin-right: 50px;
 }
-.carousel-item > .img-fluid{   
-    width: 1920px;
-    height: 620px;
-    max-width: 100%;
-    min-width: 60%;
+
+.carousel-item>.img-fluid {
+  width: 1920px;
+  height: 620px;
+  max-width: 100%;
+  min-width: 60%;
 
 }
-#texto-adoptar{
+
+#texto-adoptar {
   align-content: center;
 }
 
-.card > .img{
-
+.card>.img {
   width: 100px;
 }
 
-#articulo1 img{
+#articulo1 img {
   width: 640px;
   height: 300px;
   display: cover;
 }
 
 
-#colaborador{
+#colaborador {
   width: 50%;
   height: 50%;
   display: flex;
@@ -188,6 +201,6 @@ main{
 
 }
 
-#invitacion-adoptar{
+#invitacion-adoptar {
   margin-top: 5%;
 }
