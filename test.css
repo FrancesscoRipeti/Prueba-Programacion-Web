@@ -1,0 +1,135 @@
+/**VENTANA SOLO PARA ESCRIBIR CODIGO DE PRUEBA**/
+/**VENTANA SOLO PARA ESCRIBIR CODIGO DE PRUEBA**/
+/**VENTANA SOLO PARA ESCRIBIR CODIGO DE PRUEBA**/
+/**VENTANA SOLO PARA ESCRIBIR CODIGO DE PRUEBA**/
+/**VENTANA SOLO PARA ESCRIBIR CODIGO DE PRUEBA**/
+/**VENTANA SOLO PARA ESCRIBIR CODIGO DE PRUEBA**/
+body{
+    background-color: #ffffff;
+}
+
+nav{
+    z-index: 999;
+    max-width: 100%;
+    min-width: 30%;
+    margin-bottom: 10px;
+    
+}
+
+#carouselExampleAutoplaying{
+    position: relative;
+}
+
+header{
+    width: 100%;
+}
+
+#navbarPrincipal{
+    height: 70px;
+    font-size: 25px;
+    font-weight: 500;
+    background-color: rgb(252, 246, 195);
+    
+}
+
+#navbarPrincipal .navbar-brand{
+    font-size: 40px;
+    font-weight: 500;
+    margin-right: 20px
+    
+}
+
+
+
+#carouselExampleAutoplaying .carousel-inner > img{
+    width: 50px;
+    height: 20%;
+   
+}
+
+#carouselExampleAutoplaying .carousel-inner{
+height: 250px;
+max-width: 70%;
+margin: auto;
+
+}
+
+#carouselExampleAutoplaying .carousel-item .btn{
+display: flex;
+text-align: center;
+
+
+}
+#carouselExampleAutoplaying .carousel-item p{
+text-align: center;
+}
+
+.resolucion {
+    width: 100%;
+    text-align: center;
+}
+
+/**Movil**/
+
+@media (max-width: 767px) {
+    .desktop {
+        display: none;
+    }
+    .tablet {
+        display: none;
+
+    }
+}
+
+
+/**Tablet**/
+
+@media (min-width: 768px) and (max-width: 990px) {
+    .desktop {
+        display: none;
+    }
+    .movil {
+        display: none;
+    }
+}
+
+
+/**Escritorio**/
+
+@media (min-width: 991px) {
+    .tablet {
+        display: none;
+    }
+    .movil {
+        display: none;
+    }
+}
+
+#holl {
+    position: relative; 
+    left: 0px;
+    right: 0px;
+    top: 30px;
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+}
+
+.inner {
+    position: absolute; /** posicionar un elemento en relación con el contenedor más cercano que sea de una posicion distinta de static. Otros elementos se comportan como si el elemento con position: absolute no estuviera allí.**/
+    top: 10px;
+    left: 20px;
+    width: 130px;
+    height: 50px;
+    background-color: green;
+}
+
+.inner2 {
+    position: relative; /**Posiciona el elemento ocupando el right,left, top, bottom sin que afecte los demás elementos, como si el elemento principal estuviera en su posición original*/
+    top: 10px;
+    left: 5px;
+    width: 165px;
+    height: 175px;
+    background-color: red;
+}
+
