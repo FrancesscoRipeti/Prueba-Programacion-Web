@@ -1,11 +1,19 @@
-*{
+* {
   padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
 }
+
 body {
-  background-color: #ffffff;
+  background-color: #fff;
+  color: #000;
+  transition: background-color 0.5s ease;
+}
+
+.dark-mode {
+  background-color: #333;
+  color: #fff;
 }
 
 nav {
@@ -186,11 +194,17 @@ main {
 }
 
 #articulo1 img {
-  width: 640px;
-  height: 300px;
+  width: 100%;
+  max-width: 1080px;
+  height: 100hv;
+  max-height: 250px;
   display: cover;
+  margin-top: 10px;
 }
 
+#card-tienda h5 {
+  margin: 20px 15px 40px;
+}
 
 #colaborador {
   width: 50%;
@@ -228,3 +242,174 @@ main {
   height: 175px;
   background-color: red;
 }
+
+/* inicio y registro de sesion */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+#gran-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+}
+
+#container-ini-reg {
+  width: 1000px;
+  height: 500px;
+  display: flex;
+  position: relative;
+  background-color: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgb(0, 0, 0, 0.3)
+}
+
+#cont-form {
+  width: 100%;
+  overflow: hidden;
+}
+
+#cont-form form {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.5s ease-in;
+}
+
+#cont-form h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.social-networks {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+.social-networks ion-icon {
+  border: 1px solid #C9CCCB;
+  border-radius: 6px;
+  padding: 8px;
+  cursor: pointer;
+}
+
+#cont-form span {
+  font-size: 12px;
+  margin-bottom: 15px;
+
+}
+
+.container-input {
+  width: 300px;
+  height: 40px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: 0 15px;
+  background-color: #EEEEEE;
+}
+
+.container-input input {
+  border: none;
+  outline: none;
+  width: 100%;
+  height: 100%;
+  background-color: inherit;
+}
+
+#cont-form a {
+  font-size: 14px;
+  margin-bottom: 20px;
+  margin-top: 5px;
+  color: black;
+}
+
+#cont-form .button {
+  width: 170px;
+  height: 45px;
+  font-size: 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  background-color: #73aaa9;
+  color: white;
+}
+
+/* animacion formulario ini-reg*/
+.sing-up {
+  transform: translateX(-100%);
+}
+
+#container-ini-reg.toggle .sing-in {
+  transform: translateX(100%);
+}
+
+#container-ini-reg.toggle .sing-up {
+  transform: translateX(0);
+}
+
+/* bienvenido  */
+#cont-wel {
+  position: absolute;
+  width: 48.5%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  transform: translateX(101%);
+  background-color: #3AB397;
+  transition: transform 0.5s ease-in-out, border-radius 0.5s ease-in-out;
+  overflow: hidden;
+  border-radius: 25% 0 0 25%;
+}
+
+#container-ini-reg.toggle #cont-wel {
+  transform: translateX(0);
+  border-radius: 0 25% 25% 0;
+  background-color: #3AA8AD;
+}
+
+#cont-wel .welcome {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 0 70px;
+  color: white;
+  transition: transform 0.5s ease-in-out;
+}
+
+.welcome {
+  transform: translateX(0%);
+}
+
+.welcome h3 {
+  font-size: 40px;
+}
+
+.welcome p {
+  font-size: 14px;
+  text-align: center;
+}
+
+.welcome .button {
+  border: 2px solid white;
+  background-color: transparent;
+}
+
+#container-ini-reg.toggle #wel-sing-in {
+  transform: translateX(100%);
+}
+
+#container-ini-reg.toggle #wel-sing-up {
+  transform: translateX(0%);
+}
+
