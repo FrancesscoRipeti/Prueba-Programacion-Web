@@ -56,11 +56,11 @@
     </header>
 
     <!-- codigo inicio sesion y el registro -->
-    <div class="container" id="gran-container">
+    <div class="container-fluid" id="gran-container">
 
-        <div class="container" id="container-ini-reg">
+        <div class="container-fluid" id="container-ini-reg">
             <div class="container-form" id="cont-form">
-                <form class="sign-in">
+                <form class="sing-in">
                     <h2>Iniciar Sesión</h2>
                     <div class="social-networks">
                         <ion-icon name="logo-twitch"></ion-icon>
@@ -70,19 +70,21 @@
                     </div>
                     <span>Use su correo y contraseña</span>
                     <div class="container-input">
+                        <label for="emailSIN"></label>
                         <ion-icon name="mail-outline"></ion-icon>
-                        <input type="text" placeholder="Email">
+                        <input type="text" placeholder="Email" id="email-sing-in">
                     </div>
                     <div class="container-input">
+                        <label for="passwordSIN"></label>
                         <ion-icon name="lock-closed-outline"></ion-icon>
-                        <input type="password" placeholder="Password">
+                        <input type="password" placeholder="Password" id="password-sing-in">
                     </div>
                     <a href="#">¿Olvidaste tu contraseña?</a>
-                    <button class="button">INICIAR SESIÓN</button>
+                    <button class="button" type="submit">INICIAR SESIÓN</button>
                 </form>
             </div>
             <div class="container-form" id="cont-form">
-                <form class="sign-up">
+                <form class="sing-up">
                     <h2>Registrarse</h2>
                     <div class="social-networks">
                         <ion-icon name="logo-twitch"></ion-icon>
@@ -92,29 +94,30 @@
                     </div>
                     <span>Use su correo electrónico para registrarse</span>
                     <div class="container-input">
+                        <label for="nombreSUP"></label>
                         <ion-icon name="person-outline"></ion-icon>
-                        <input type="text" placeholder="Nombre">
+                        <input type="text" placeholder="Nombre" id="nombre-sing-up">
                     </div>
                     <div class="container-input">
+                        <label for="emailSUP"></label>
                         <ion-icon name="mail-outline"></ion-icon>
-                        <input type="text" placeholder="Email">
+                        <input type="text" placeholder="Email" id="email-sing-up">
                     </div>
                     <div class="container-input">
+                        <label for="passwordSUP"></label>
                         <ion-icon name="lock-closed-outline"></ion-icon>
-                        <input type="password" placeholder="Password">
+                        <input type="password" placeholder="Password" id="password-sing-up">
                     </div>
-                    <button class="button">REGISTRARSE</button>
+                    <button class="button" type="submit">REGISTRARSE</button>
                 </form>
             </div>
             <div class="container-welcome" id="cont-wel">
-                <div class="welcome-sign-up welcome" id="welcome-sign-in">
+                <div class="welcome-sign-up welcome" id="welcome-sing-in">
                     <h3>¡Bienvenido!</h3>
-                    <br>
-                    <br>
-                    <p>Ingrese sus datos personales para usar todas las funciones del sitio</p>
+                    <p>Ingrese sus datos personales para poder usar todas las funciones del sitio</p>
                     <button id="btn-sing-in" class="button">Registrarse</button>
                 </div>
-                <div class="welcome-sign-in welcome" id="welcome-sign-up">
+                <div class="welcome-sign-in welcome" id="welcome-sing-up">
                     <h3>¡Hola!</h3>
                     <p>Regístrese con sus datos personales para usar todas las funciones del sitio</p>
                     <button id="btn-sing-up" class="button">Iniciar Sesión</button>
@@ -122,9 +125,8 @@
             </div>
         </div>
     </div>
-    <button id="btn"> click</button>
 
-
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="/script.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
