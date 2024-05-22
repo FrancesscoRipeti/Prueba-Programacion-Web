@@ -219,9 +219,6 @@ h2 {
 
 }
 
-#texto-adoptar {
-  align-content: center;
-}
 /* inicio css de la pagina de tienda */
 
 
@@ -458,11 +455,11 @@ h2 {
 }
 
 .welcome h3 {
-  font-size: 40px;
+  font-size: 80px;
 }
 
 .welcome p {
-  font-size: 14px;
+  font-size: 18px;
   text-align: center;
 }
 
@@ -486,7 +483,7 @@ h2 {
 
 
 
-/* animacion de scroll css*/
+
 @keyframes show {
 	from {
 		opacity: 0;
@@ -511,4 +508,28 @@ h2 {
 
   transition: transform 1s, opacity 1s;
   will-change: transform, opacity;
+}
+
+
+
+/* NOSOTROS */
+#img-colaborador {
+  width: 30%;
+  max-width: 1250px;
+  height: 100%;
+  max-height: 3500px;
+  margin: 70px 400px 0px;
+  border-radius: 50%;
+  gap: 40px;
+  transition: transform 0.5s ease-in-out;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex: wrap;
+  justify-content: center;
+}
+
+#img-colaborador:hover {
+  transform: scale(1.2);
+  transition: transform 1.5s;
 }
