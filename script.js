@@ -87,3 +87,23 @@ $(document).ready(function(){
 
     });
 });
+
+/*Expande de manera automatica el campo de mensaje, ademas de verificar que los caracteres no sobrepasen los 300,
+bloquendo el boton de enviar y dar un aviso*/
+function autoExpand(element) {
+    element.style.height = 'auto';
+    element.style.height = (element.scrollHeight);
+    var counter = document.getElementById("counter");
+    var limitemsg= document.getElementById("aviso-limite-msg");
+    if (element.value.length > 600) {
+        counter.style.color = "red";
+        counter.innerHTML = element.value.length + "/600";
+        document.getElementById("enviar").disabled = true;
+        limitemsg.style.display = "block";
+    } else {
+        counter.style.color = "black";
+        counter.innerHTML = element.value.length + "/600";
+        document.getElementById("enviar").disabled = false;
+        limitemsg.style.display = "none";
+    }
+};
