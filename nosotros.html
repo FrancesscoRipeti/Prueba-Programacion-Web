@@ -44,57 +44,59 @@
 
 
 <!--  Navbar, en la cual se puede acceder  diferentes vistas como principal, tienda, adopcion, nosotros y el carro  -->
-<header style="background-color: #000000;">
-  <nav class="navbar navbar-expand-lg" id="navbarPrincipal" style="background-color: #3AB397;">
-    <div class="container d-flex justify-content-center w-100" style="background-color: #3AB397;">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
-        aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <a class="navbar-brand" href="#">
-        <h2>🐶Happy Pet🐱</h2>
-      </a>
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-        <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
-          <li class="nav-item">
-            <a class="nav-link active text-white" aria-current="page" href="index.html"> Principal</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="tienda.html">Tienda</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="adopcion.html">Adopción</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="nosotros.html">Nosotros</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="Inisesion_regsesion.html">Iniciar Sesión</a>
-          </li>
-        </ul>
-
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Buscar</button>
-        </form>
-        <!-- Icono de carrito usando Font Awesome -->
-        <div class="nav-item ms-4">
-          <a class="nav-link" href="carrito.html">
-            <i class="fas fa-shopping-cart"></i>
-          </a>
-        </div>
-      </div>
-    </div>
-  </nav>
-</header>
+<nav class="navbar navbar-expand-lg" id="navbarPrincipal" style="background-color: #3AB397;">
+                    <div class="container d-flex justify-content-center w-100" style="background-color: #3AB397;">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">
+                            <h2>🐶Happy Pet🐱</h2>
+                        </a>
+                        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                            <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                    <a class="nav-link active text-white" aria-current="page" href="index.html"> Principal</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="tienda.html">Tienda</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="adopcion.html">Adopción</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="nosotros.html">Nosotros</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="Inisesion_regsesion.html"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                                    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+                                    </svg></a>
+                                </li>
+                            </ul>
+                            <form class="d-flex" role="search">
+                                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                                <button class="btn btn-outline-success" type="submit">Buscar</button>
+                            </form>
+                            <!-- Icono de carrito usando Font Awesome -->
+                            <div class="nav-item ms-4">
+                                <a class="nav-link" href="carrito.html">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
 
 <!--Conociendo al equipo -->
 <main>
   <center>
     <div class="row align-items-center  " id="colaborador">
-      <div class="col-md-6 mb-md-0 p-md-10" id="img-colaborador">
+
+      <div class="col" id="img-colaborador">
         <img src="img/nosotros-1.jpg" class="w-100 circular-image" alt="...">
-        <div class="col-md-6 p-2 ps-md-0 " id="texto-adoptar">
+        <div class="col " id="texto-adoptar">
           <h2 class="mt-0">Sara</h2>
           <p>Sara es una emprendedora apasionada que siempre ha amado a los animales.
             Con su tienda "Happy Pet", ofrece un paraíso para todas las mascotas y sus dueños.
@@ -102,9 +104,9 @@
             "Happy Pet" es más que una tienda, es un refugio para todos los amantes de los animales en la comunidad.</p>
         </div>
       </div>
-      <div class="col-md-6 mb-md-0 p-md-10" id="img-colaborador">
+      <div class="col" id="img-colaborador">
         <img src="img/nosotros-2.jpg" class="w-100 circular-image" alt="...">
-        <div class="col-md-6 p-2 ps-md-0 " id="texto-adoptar">
+        <div class="col" id="texto-adoptar">
           <h2 class="mt-0">Omar</h2>
           <p>Omar amante de los animales desde su infancia.
             Con una sólida formación en cuidado animal, decidió unirse a "Happy Pet" para hacer lo que más le gusta.
@@ -114,9 +116,9 @@
         </div>
       </div>
 
-      <div class="col-md-6 mb-md-0 p-md-10" id="img-colaborador">
+      <div class="col" id="img-colaborador">
         <img src="img/nosotros-3.jpg" class="w-100 circular-image" alt="...">
-        <div class="col-md-6 p-2 ps-md-0 " id="texto-adoptar">
+        <div class="col" id="texto-adoptar">
           <h2 class="mt-0">Sebastian</h2>
           <p>Sebastian es un experto en comportamiento animal que se unió a "Happy Pet" con el deseo de ayudar a los
             clientes a entender mejor a sus mascotas.
