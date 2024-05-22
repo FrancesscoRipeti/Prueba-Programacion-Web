@@ -21,7 +21,33 @@ btnSingUP.addEventListener('click', () => {
 );
 
 /*INICIO OCULTAR O MOSTAR REG O INI SESION*/
-/* INICIAR SECION */ 
+/* INICIAR SESION */ 
+$(document).ready(function(){
+    $("#sing-in").submit(function(event){
+
+    event.preventDefault();
+    
+    var email = $("#email-sing-in").val();
+    var password = $("#password-sing-in").val();
+    
+    if(email.length < 3 || email.length > 20){
+        alert("El Email debe tener entre 3 y 20 caracteres.");
+        return;
+    }
+    
+
+    if(password.length < 3 || password.length > 20){
+        alert("La contraseña debe tener entre 3 y 20 caracteres.");
+        return;
+    }
+
+    alert("¡Inicio exitoso!");
+   
+    console.log("Email: " + email);
+    console.log("Password: " + password);
+    window.location.href="index.html";
+    });
+});
 
 /*REGISTRO*/
 
@@ -30,9 +56,9 @@ $(document).ready(function(){
 
     event.preventDefault();
     
-    var nombre = $("#nombreSUP").val();
-    var email = $("#emailSUP").val();
-    var password = $("#passwordSUP").val();
+    var nombre = $("#nombre-sing-up").val();
+    var email = $("#email-sing-up").val();
+    var password = $("#password-sing-up").val();
     
 
     if(nombre.length < 3 || nombre.length > 20){
@@ -57,7 +83,7 @@ $(document).ready(function(){
     console.log("Name: " + nombre);
     console.log("Email: " + email);
     console.log("Password: " + password);
+    window.location.href="index.html";
 
     });
 });
-

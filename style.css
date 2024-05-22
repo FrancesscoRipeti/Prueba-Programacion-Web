@@ -449,11 +449,11 @@ h2 {
 }
 
 .welcome h3 {
-  font-size: 80px;
+  font-size: 40px;
 }
 
 .welcome p {
-  font-size: 18px;
+  font-size: 14px;
   text-align: center;
 }
 
@@ -477,7 +477,7 @@ h2 {
 
 
 
-
+/* animacion de scroll css*/
 @keyframes show {
 	from {
 		opacity: 0;
