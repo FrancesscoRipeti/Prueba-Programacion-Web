@@ -108,6 +108,19 @@ h2 {
   padding-top: 3%;
 }
 
+.carousel-caption h5 {
+  font-size: 24px;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.carousel-caption p {
+  font-size: 16px;
+  color: #dddddd;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+
 
 /* Fin del carrusel*/
 /* invitacion adoptar inicio*/
@@ -542,6 +555,22 @@ h2 {
 
 
 /* NOSOTROS */
+<<<<<<< Updated upstream
+=======
+#img-colaborador {
+  width: 100%;
+  max-width: 300px;
+  height: 100%;
+  max-height: 300px;
+  border-radius: 50%;
+  gap: 40px;
+  display: flex;
+  flex: wrap;
+  transition: transform 0.5s ease-in-out;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+>>>>>>> Stashed changes
 
 
 #row-nosotros {
