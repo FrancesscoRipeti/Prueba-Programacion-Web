@@ -98,8 +98,10 @@
                     <textarea class="form-control" name="mensaje" placeholder="Envianos tu Mensaje" rows="2" oninput="autoExpand(this)" maxlength="800" required></textarea>
                   </div>
                 </div>
-                <div id="counter" style="color: black; position: absolute; bottom: 25%; right: 5%;">0/600</div>
-                <div class="text-center">
+                <div class="text-center d-flex justify-content-end">
+                  <div id="counter" style="color: black;">0/600</div>
+                </div>
+                <div class="text-center" style="margin: -10px;">
                   <input id="enviar" type="submit" value="Enviar" class="btn text-white btn-block rounded-0 py-2" style="background-color: #3AB397;">
                   <div id="aviso-limite-msg" style="position: absolute; display: none; left: 50%; transform: translateX(-50%); color: red;">Has superado el límite de caracteres</div>
                 </div>
