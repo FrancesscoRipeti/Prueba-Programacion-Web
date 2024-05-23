@@ -94,7 +94,7 @@ function autoExpand(element) {
     element.style.height = 'auto';
     element.style.height = (element.scrollHeight);
     var counter = document.getElementById("counter");
-    var limitemsg= document.getElementById("aviso-limite-msg");
+    var limitemsg = document.getElementById("aviso-limite-msg");
     if (element.value.length > 600) {
         counter.style.color = "red";
         counter.innerHTML = element.value.length + "/600";
