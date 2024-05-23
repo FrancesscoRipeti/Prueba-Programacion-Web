@@ -19,6 +19,7 @@ body {
 }
  /* inicio de la barra de navegacion */
 nav {
+  z-index: 1000;
   max-width: 100%;
   min-width: 50%;
 }
@@ -285,13 +286,27 @@ h2 {
 /* fin css de la pagina de tienda */
 
 #colaborador {
-  width: 50%;
-  height: 50%;
+  width: 100%;
+  max-width: 900px;
+  height: 100%;
   display: flex;
   flex-wrap: nowrap;
-  margin-right: 20%;
-
 }
+
+#texto-nosotros h2{
+  color: #000;
+  width: 100%;
+  max-width: 900px;
+  height: 100%;
+  border: #000;
+  font-size: 70px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 15px;
+  margin-right: 40px;
+}
+
+
 
 #invitacion-adoptar {
   margin-top: 5%;
@@ -509,6 +524,20 @@ h2 {
 	}
 }
 
+#container-art-mas-vendido{
+  width: 100%;
+  height: 100%;
+   display: flex;
+  flex-wrap: wrap;
+  background-color: #fff;
+}
+#art-mas-vendidos{
+  width: 100%;
+  height: 100%;
+  
+ 
+}
+
 #art-mas-vendidos .card  {
 	view-timeline-name: --image;
 	view-timeline-axis: block;
@@ -543,12 +572,13 @@ h2 {
 
 #row-nosotros {
   display: flex;
-  flex: column;
+  flex: column  ;
   justify-content: center;
   }
 
 #text-colaborador h5 {
   width: 100%;
+  
   text-align: center;
   margin-top: 20px;
   margin-bottom: 20px;
