@@ -513,6 +513,22 @@ h2 {
 
 
 /* NOSOTROS */
+<<<<<<< Updated upstream
+=======
+#img-colaborador {
+  width: 100%;
+  max-width: 300px;
+  height: 100%;
+  max-height: 300px;
+  border-radius: 50%;
+  gap: 40px;
+  display: flex;
+  flex: wrap;
+  transition: transform 0.5s ease-in-out;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+>>>>>>> Stashed changes
 
 
 #row-nosotros {

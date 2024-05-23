@@ -214,31 +214,33 @@
             </div>
           </form>
         </div>
+
+
         <div class="col-md-7 col-lg-8">
           <h4 class="mb-3">Dirección de Envio</h4>
-          <form class="needs-validation" novalidate>
+          <form class="form-envio" >
             <div class="row g-3">
               <div class="col-sm-6">
-                <label for="firstName" class="form-label">Nombre</label>
-                <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                <label for="" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="nombre-form-envio" placeholder="" value="" required>
                 <div class="invalid-feedback">
                   Se requiere un nombre válido.
                 </div>
               </div>
 
               <div class="col-sm-6">
-                <label for="lastName" class="form-label">Apellido</label>
-                <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                <label for="" class="form-label">Apellido</label>
+                <input type="text" class="form-control" id="apellido-form-envio" placeholder="" value="" required>
                 <div class="invalid-feedback">
                   Se requiere Apellido valido.
                 </div>
               </div>
 
               <div class="col-12">
-                <label for="username" class="form-label">Nombre de Usuario</label>
+                <label for="" class="form-label">Nombre de Usuario</label>
                 <div class="input-group has-validation">
                   <span class="input-group-text">@</span>
-                  <input type="text" class="form-control" id="username" placeholder="Nombre de Usuario" required>
+                  <input type="text" class="form-control" id="nomUsuario-form-envio" placeholder="Nombre de Usuario">
                   <div class="invalid-feedback">
                     Se requiere tu nombre de Usuario.
                   </div>
@@ -246,30 +248,30 @@
               </div>
 
               <div class="col-12">
-                <label for="email" class="form-label">Email <span class="text-body-secondary">(Opcional)</span></label>
-                <input type="email" class="form-control" id="email" placeholder="tu@ejemplo.com">
+                <label for="" class="form-label">Email <span class="text-body-secondary">(Opcional)</span></label>
+                <input type="email" class="form-control" id="email-form-envio" placeholder="tu@ejemplo.com">
                 <div class="invalid-feedback">
                   Ingrese una dirección de correo electrónico válida para recibir actualizaciones de envío.
                 </div>
               </div>
 
               <div class="col-12">
-                <label for="address" class="form-label">Dirección</label>
-                <input type="text" class="form-control" id="address" placeholder="Departamento o Casa" required>
+                <label for="" class="form-label">Dirección</label>
+                <input type="text" class="form-control" id="direccion-form-envio" placeholder="Departamento o Casa" required>
                 <div class="invalid-feedback">
                   Por favor introduzca su direccion de envio.
                 </div>
               </div>
 
               <div class="col-12">
-                <label for="address2" class="form-label">Dirección 2 <span
+                <label for="" class="form-label">Dirección 2 <span
                     class="text-body-secondary">(Opcional)</span></label>
-                <input type="text" class="form-control" id="address2" placeholder="Departamento o Casa">
+                <input type="text" class="form-control" id="direccion2-form-envio" placeholder="Departamento o Casa">
               </div>
 
               <div class="col-md-5">
-                <label for="country" class="form-label">País</label>
-                <select class="form-select" id="country" required>
+                <label for="" class="form-label">País</label>
+                <select class="form-select" id="pais-form-envio" required>
                   <option value="">Elegir...</option>
                   <option>Chile</option>
                 </select>
@@ -279,8 +281,8 @@
               </div>
 
               <div class="col-md-4">
-                <label for="state" class="form-label">Ciudad</label>
-                <select class="form-select" id="state" required>
+                <label for="" class="form-label">Ciudad</label>
+                <select class="form-select" id="ciudad-form-envio" required>
                   <option value="">Elegir...</option>
                   <option>Santiago de Chile</option>
                   <option>Punta Arenas</option>
@@ -294,8 +296,8 @@
               </div>
 
               <div class="col-md-3">
-                <label for="zip" class="form-label">Zip</label>
-                <input type="text" class="form-control" id="zip" placeholder="" required>
+                <label for="" class="form-label">Zip</label>
+                <input type="zip" class="form-control" id="codigoPostal-form-envio" placeholder="" required>
                 <div class="invalid-feedback">
                   Codigo Postal.
                 </div>
@@ -305,14 +307,8 @@
             <hr class="my-4">
 
             <div class="form-check">
-              <input type="checkbox" class="form-check-input" id="same-address">
-              <label class="form-check-label" for="same-address">
-                La dirección de envío es la misma que mi dirección de facturación.</label>
-            </div>
-
-            <div class="form-check">
               <input type="checkbox" class="form-check-input" id="save-info">
-              <label class="form-check-label" for="save-info">Guarda esta información para la próxima vez.</label>
+              <label class="pago-form-envio" for="save-info">Guarda esta información para la próxima vez.</label>
             </div>
 
             <hr class="my-4">
@@ -320,24 +316,24 @@
             <h4 class="mb-3">Pago</h4>
 
             <div class="my-3">
-              <div class="form-check">
-                <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked required>
-                <label class="form-check-label" for="credit">Tarjeta de crédito</label>
+              <div id="pago-form-envio" class="form-check">
+                <input id="nomtarjeta-form-envio" name="" type="radio" class="form-check-input" checked required>
+                <label class="" for="credit">Tarjeta de crédito</label>
               </div>
               <div class="form-check">
-                <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
+                <input id="numtarjeta-form-envio" name="" type="radio" class="form-check-input" required>
                 <label class="form-check-label" for="debit">Tarjeta de débito</label>
               </div>
               <div class="form-check">
-                <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required>
+                <input id="expiracion-form-envio" name="" type="radio" class="form-check-input" required>
                 <label class="form-check-label" for="paypal">PayPal</label>
               </div>
             </div>
 
             <div class="row gy-3">
               <div class="col-md-6">
-                <label for="cc-name" class="form-label">Nombre en la tarjeta</label>
-                <input type="text" class="form-control" id="cc-name" placeholder="" required>
+                <label for="" class="form-label">Nombre en la tarjeta</label>
+                <input type="text" class="form-control" id="nomtarjeta-form-envio" placeholder="" required>
                 <small class="text-body-secondary">Nombre completo como se muestra en la tarjeta.</small>
                 <div class="invalid-feedback">
                   Se requiere el nombre en la tarjeta
@@ -346,7 +342,7 @@
 
               <div class="col-md-6">
                 <label for="cc-number" class="form-label">Número de Tarjeta de Crédito</label>
-                <input type="text" class="form-control" id="cc-number" placeholder="" required>
+                <input type="text" class="form-control" id="numtarjeta-form-envio" placeholder="" required>
                 <div class="invalid-feedback">
                   Se requiere número de tarjeta de crédito
                 </div>
@@ -354,7 +350,7 @@
 
               <div class="col-md-3">
                 <label for="cc-expiration" class="form-label">Vencimiento</label>
-                <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+                <input type="text" class="form-control" id="expiracion-form-envio" placeholder="" required>
                 <div class="invalid-feedback">
                   Fecha de vencimiento requerida
                 </div>
@@ -362,7 +358,7 @@
 
               <div class="col-md-3">
                 <label for="cc-cvv" class="form-label">CVV</label>
-                <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+                <input type="text" class="form-control" id="cvv-form-envio" placeholder="" required>
                 <div class="invalid-feedback">
                   Se requiere código de seguridad
                 </div>

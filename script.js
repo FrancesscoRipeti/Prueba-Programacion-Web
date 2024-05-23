@@ -88,6 +88,7 @@ $(document).ready(function(){
     });
 });
 
+<<<<<<< Updated upstream
 /*Expande de manera automatica el campo de mensaje, ademas de verificar que los caracteres no sobrepasen los 300,
 bloquendo el boton de enviar y dar un aviso*/
 function autoExpand(element) {
@@ -107,6 +108,11 @@ function autoExpand(element) {
         limitemsg.style.display = "none";
     }
 };
+=======
+/*FIN OCULTAR O MOSTAR REG O INI SESION*/
+
+/*FORMULARIO DE ENVIO(CARRITO) */
+>>>>>>> Stashed changes
 
 $(document).ready(function(){
     $("#form-envio").submit(function(event){
@@ -144,11 +150,19 @@ $(document).ready(function(){
             alert("La dirección debe tener entre 10 y 50 caracteres.");
             return;
         }
+<<<<<<< Updated upstream
         if(pais === ""){
             alert("Seleccione un país.");
             return;
         }
         if(ciudad === ""){
+=======
+        if(!pais){
+            alert("Seleccione un país.");
+            return;
+        }
+        if(!ciudad){
+>>>>>>> Stashed changes
             alert("Seleccione una ciudad.");
             return;
         }
@@ -156,7 +170,11 @@ $(document).ready(function(){
             alert("El código postal debe tener entre 3 y 20 caracteres.");
             return;
         }
+<<<<<<< Updated upstream
         if(pago === ""){
+=======
+        if(!pago){
+>>>>>>> Stashed changes
             alert("Seleccione un método de pago.");
             return;
         }
