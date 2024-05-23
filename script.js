@@ -88,7 +88,6 @@ $(document).ready(function(){
     });
 });
 
-<<<<<<< Updated upstream
 /*Expande de manera automatica el campo de mensaje, ademas de verificar que los caracteres no sobrepasen los 300,
 bloquendo el boton de enviar y dar un aviso*/
 function autoExpand(element) {
@@ -108,14 +107,9 @@ function autoExpand(element) {
         limitemsg.style.display = "none";
     }
 };
-=======
-/*FIN OCULTAR O MOSTAR REG O INI SESION*/
-
-/*FORMULARIO DE ENVIO(CARRITO) */
->>>>>>> Stashed changes
 
 $(document).ready(function(){
-    $("#form-envio").submit(function(event){
+    $(".form-envio").submit(function(event){
         event.preventDefault();
 
         var nombre = $("#nombre-form-envio").val();
@@ -127,13 +121,15 @@ $(document).ready(function(){
         var pais = $("#pais-form-envio").val();
         var ciudad = $("#ciudad-form-envio").val();
         var codigoPostal = $("#codigoPostal-form-envio").val();
-        var pago = $("#pago-form-envio").val();
         var nomtarjeta = $("#nomtarjeta-form-envio").val();
         var numtarjeta = $("#numtarjeta-form-envio").val();
         var expiracion = $("#expiracion-form-envio").val();
         var cvv = $("#cvv-form-envio").val();
 
-        // Validate required inputs
+        // Obtener el método de pago seleccionado
+        var metodoPago = $("input[name='pago']:checked").val();
+
+        // Validar campos obligatorios
         if(nombre.length < 3 || nombre.length > 20){
             alert("El Nombre debe tener entre 3 y 20 caracteres.");
             return;
@@ -142,27 +138,19 @@ $(document).ready(function(){
             alert("El Apellido debe tener entre 3 y 20 caracteres.");
             return;
         }
-        if(email.length < 3 || email.length > 20){
-            alert("El Email debe tener entre 3 y 20 caracteres.");
+        if(email.length > 0 && (email.length < 3 || email.length > 50)){
+            alert("El Email debe tener entre 3 y 50 caracteres.");
             return;
         }
         if(direccion.length < 10 || direccion.length > 50){
             alert("La dirección debe tener entre 10 y 50 caracteres.");
             return;
         }
-<<<<<<< Updated upstream
         if(pais === ""){
             alert("Seleccione un país.");
             return;
         }
         if(ciudad === ""){
-=======
-        if(!pais){
-            alert("Seleccione un país.");
-            return;
-        }
-        if(!ciudad){
->>>>>>> Stashed changes
             alert("Seleccione una ciudad.");
             return;
         }
@@ -170,11 +158,7 @@ $(document).ready(function(){
             alert("El código postal debe tener entre 3 y 20 caracteres.");
             return;
         }
-<<<<<<< Updated upstream
-        if(pago === ""){
-=======
-        if(!pago){
->>>>>>> Stashed changes
+        if(!metodoPago){
             alert("Seleccione un método de pago.");
             return;
         }
@@ -195,13 +179,13 @@ $(document).ready(function(){
             return;
         }
 
-        // Validate optional fields if they are not empty
+        // Validar campos opcionales si están presentes
         if(nomUsuario.length > 0 && (nomUsuario.length < 3 || nomUsuario.length > 20)){
             alert("El Nombre de Usuario debe tener entre 3 y 20 caracteres si está presente.");
             return;
         }
-        if(direccion2.length > 0 && (direccion2.length < 3 || direccion2.length > 20)){
-            alert("La dirección 2 debe tener entre 3 y 20 caracteres si está presente.");
+        if(direccion2.length > 0 && (direccion2.length < 3 || direccion2.length > 50)){
+            alert("La dirección 2 debe tener entre 3 y 50 caracteres si está presente.");
             return;
         }
 
@@ -216,13 +200,13 @@ $(document).ready(function(){
         console.log("País: " + pais);
         console.log("Ciudad: " + ciudad);
         console.log("Código Postal: " + codigoPostal);
-        console.log("Método de Pago: " + pago);
+        console.log("Método de Pago: " + metodoPago);
         console.log("Nombre de la Tarjeta: " + nomtarjeta);
         console.log("Número de Tarjeta: " + numtarjeta);
         console.log("Fecha de Expiración: " + expiracion);
         console.log("Código de Seguridad: " + cvv);
 
-        // Redirect after successful submission
+        // Redirigir después del envío exitoso
         window.location.href = "index.html";
     });
 });
