@@ -17,7 +17,8 @@ body {
   background-color: #333;
   color: #fff;
 }
- /* inicio de la barra de navegacion */
+
+/* inicio de la barra de navegacion */
 nav {
   z-index: 1000;
   max-width: 100%;
@@ -38,7 +39,7 @@ header {
   width: 100%;
 }
 
-.img-carrusel{
+.img-carrusel {
   width: 100%;
   height: 100%;
   display: block;
@@ -47,6 +48,7 @@ header {
 
 
 }
+
 #navbarPrincipal {
   height: 70px;
   font-size: 25px;
@@ -121,18 +123,20 @@ h2 {
 
 /* Fin del carrusel*/
 /* invitacion adoptar inicio*/
-#foto-adopt{
+#foto-adopt {
   width: 100px;
   height: 10%;
-  
+
 }
-.invi-adoptar{
+
+.invi-adoptar {
   width: 100%;
   justify-content: center;
   align-items: center;
-  
+
 }
-#cont-invi-adopt{
+
+#cont-invi-adopt {
   width: 100%;
   height: 100%;
   display: flex;
@@ -166,6 +170,7 @@ h2 {
   margin-left: 5%;
   margin-top: 40px;
 }
+
 /*fin de card inicio
 /**Movil**/
 
@@ -233,13 +238,14 @@ h2 {
 /* inicio css de la pagina de tienda */
 
 
-.container-fluid{
+.container-fluid {
 
   margin-top: 20px;
   margin-bottom: 20px;
 
 }
-#container-card{
+
+#container-card {
   width: 100%;
   max-width: 100%;
   display: flex;
@@ -250,8 +256,10 @@ h2 {
   margin-bottom: 20px;
 
 }
+
 .card-item {
-  flex: auto auto auto calc(100% - 20%); /* 5 items per row with a gap of 20px */
+  flex: auto auto auto calc(100% - 20%);
+  /* 5 items per row with a gap of 20px */
   max-width: calc(100% - 10%);
   max-height: 80%;
   margin: 10px;
@@ -261,10 +269,12 @@ h2 {
   overflow: hidden;
   background-color: #fff;
 }
+
 .card-item:hover {
   transform: scale(1.15);
 }
-.card img{
+
+.card img {
   width: 100%;
   max-width: 1080px;
   height: 100%;
@@ -280,6 +290,7 @@ h2 {
 #card-tienda h5 {
   margin: 20px 15px 40px;
 }
+
 /* fin css de la pagina de tienda */
 
 #colaborador {
@@ -290,7 +301,7 @@ h2 {
   flex-wrap: nowrap;
 }
 
-#texto-nosotros h2{
+#texto-nosotros h2 {
   color: #000;
   width: 100%;
   max-width: 900px;
@@ -510,40 +521,41 @@ h2 {
 
 
 @keyframes show {
-	from {
-		opacity: 0;
-		scale: 25%;
-	}
+  from {
+    opacity: 0;
+    scale: 25%;
+  }
 
-	to {
-		opacity: 1;
-		scale: 100%;
-	}
+  to {
+    opacity: 1;
+    scale: 100%;
+  }
 }
 
-#container-art-mas-vendido{
+#container-art-mas-vendido {
   width: 100%;
   height: 100%;
-   display: flex;
+  display: flex;
   flex-wrap: wrap;
   background-color: #fff;
 }
-#art-mas-vendidos{
+
+#art-mas-vendidos {
   width: 100%;
   height: 100%;
-  
- 
+
+
 }
 
-#art-mas-vendidos .card  {
-	view-timeline-name: --image;
-	view-timeline-axis: block;
+#art-mas-vendidos .card {
+  view-timeline-name: --image;
+  view-timeline-axis: block;
 
-	animation-timeline: --image;
-	animation-name: show;
+  animation-timeline: --image;
+  animation-name: show;
 
-	animation-range: entry 25% cover 30%;
-	animation-fill-mode: both;
+  animation-range: entry 25% cover 30%;
+  animation-fill-mode: both;
 
   transition: transform 1s, opacity 1s;
   will-change: transform, opacity;
@@ -556,13 +568,13 @@ h2 {
 
 #row-nosotros {
   display: flex;
-  flex: column  ;
+  flex: column;
   justify-content: center;
-  }
+}
 
 #text-colaborador h5 {
   width: 100%;
-  
+
   text-align: center;
   margin-top: 20px;
   margin-bottom: 20px;
