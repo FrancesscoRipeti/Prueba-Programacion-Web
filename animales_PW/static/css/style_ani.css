@@ -12,6 +12,8 @@ body {
   background: #f9f9f9;
   color: #333;
   transition: background-color 0.5s ease;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
 }
 
 .dark-mode {
@@ -117,6 +119,16 @@ h2 {
   color: #dddddd;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
+
+
+.gran-container-top-productos {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  gap: 200px;
+  margin:  100px 0px 100px -90px;
+} 
+
 /* Fin del carrusel*/
 /* invitacion adoptar inicio*/
 #foto-adopt {
