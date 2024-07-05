@@ -20,12 +20,16 @@ body {
   background-color: #333;
   color: #fff;
 }
-
+#usertag {
+  font-size: 25px;
+  font-weight: 500;
+  margin-right: 20px;
+}
 /* inicio de la barra de navegacion */
-nav {
+#navbarPrincipal {
   z-index: 1000;
   max-width: 100%;
-  min-width: 50%;
+  min-width: 30%;
 }
 
 #carouselExampleFade {
