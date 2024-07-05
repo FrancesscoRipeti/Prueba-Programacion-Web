@@ -219,18 +219,14 @@ h2 {
 }
 
 .circular-image {
-  border-radius: 40%;
+  border-radius: 30%;
   /* Hace que la imagen sea circular */
   overflow: hidden;
   /* Oculta cualquier contenido que exceda el radio */
-  transition: border-radius 1.5s;
+  transition: border-radius 4.5s all ease-in-out;
   /* Añade una transición suave al cambiar el radio */
 }
 
-.circular-image:hover {
-  border-radius: 1;
-  /* Cambia el radio a 0 para hacer la imagen cuadrada */
-}
 
 .carousel-item>.img-fluid {
   width: 1920px;
@@ -368,16 +364,22 @@ th, td {
 
 #texto-nosotros h2 {
   color: #000;
-  width: 100%;
-  max-width: 900px;
-  height: 100%;
+  width: 300px;
+  max-width: 90px;
+  height: 10%;
   border: #000;
-  font-size: 70px;
+  font-size: 100px;
   margin-top: 20px;
   margin-bottom: 20px;
   margin-left: 15px;
   margin-right: 40px;
 }
+
+#texto-nosotros p {
+  color: #1d1d1d;
+  width: 400px;
+} 
+
 
 
 
