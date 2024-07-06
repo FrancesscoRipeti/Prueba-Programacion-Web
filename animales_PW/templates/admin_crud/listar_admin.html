@@ -1,0 +1,80 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+<title>Listar_producto</title>
+{% endblock %}
+
+{% block content %}
+<div class="container py-4">
+    <center>
+        <h1>Sistema de listado de Categorias y Productos</h1>
+    </center>
+    <br>
+    <div class="row">
+        <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3">
+            <h2>GESTION DE PRODUCTOS</h2>
+            <div class="card">
+                <div class="card-body py-2">
+                    <form action="{% url 'registrar_prod' %}" method="POST" enctype="multipart/form-data">
+                        {% csrf_token %}
+                        <div class="form-group">
+                            <input type="text" id="txtNombre" name="txtNombre" class="form-control" placeholder="Nombre" minlength="6" maxlength="50" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="txtDescripcion" name="txtDescripcion" class="form-control" placeholder="Descripción" minlength="10" maxlength="200" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="number" id="txtPrecio" name="txtPrecio" class="form-control" placeholder="Precio" min="100" step="100" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="file" id="imgUpload" name="imgUpload" class="form-control-file" accept="image/*" required>
+                        </div>
+                        <div class="form-group">
+                            <select id="txtCategoria" name="txtCategoria" class="form-control" required>
+                                {% for cat in categorias %}
+                                <option value="{{ cat.id }}">{{ cat.nombre }}</option>
+                                {% endfor %}
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-success btn-block">GUARDAR</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-9 col-lg-9 col-xl-9">
+            <h2>LISTADO DE PRODUCTOS</h2>
+            <div class="table-responsive py-2">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Nombre</th>
+                            <th scope="col">Descripción</th>
+                            <th scope="col">Precio</th>
+                            <th scope="col">Categoría</th>
+                            <th colspan="2">Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for prod in productos %}
+                        <tr>
+                            <th scope="row">{{ forloop.counter }}</th>
+                            <td>{{ prod.nombre }}</td>
+                            <td>{{ prod.descripcion }}</td>
+                            <td>{{ prod.precio }}</td>
+                            <td>{{ prod.categoria.nombre }}</td>  <!-- Access category name -->
+                            <td>
+                                <a href="editar_prod/{{prod.id}}" class="btn btn-info">Editar</a>
+                                <a href="eliminar_prod/{{prod.id}}" class="btn btn-danger">Eliminar</a>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
