@@ -39,7 +39,7 @@ def registro(request):
         form = CustomUserCreationForm(request.POST)
         if form.is_valid():
             form.save()
-            return redirect('index_new')
+            return redirect('index')
     else:
         form = CustomUserCreationForm()
     return render(request, 'registration/registro.html', {'form': form})
@@ -64,12 +64,10 @@ def registrar_prod(request):
         nombre = request.POST['txtNombre']
         descripcion = request.POST['txtDescripcion']
         precio = request.POST['txtPrecio']
-        img = request.FILES['imgUpload']  # Usa request.FILES para manejar la carga de archivos
+        img = request.FILES['imgUpload']  # Usamos request.FILES para subir de archivos
         categoria_id = request.POST['txtCategoria']
-
         # Obtén la instancia de la categoría desde la base de datos
         cat = categoria.objects.get(id=categoria_id)
-
         # Crea el producto con la instancia de la categoría
         producto.objects.create(
             nombre=nombre,
@@ -78,8 +76,6 @@ def registrar_prod(request):
             imagen=img,
             categoria=cat
         )
-    
-    # Asegúrate de pasar las categorías a la plantilla si es una solicitud GET
     categorias = categoria.objects.all()
     productos = producto.objects.all()  # Añade esto si necesitas pasar productos a la plantilla
     return render(request, 'admin_crud/listar_admin.html', {'categorias': categorias, 'productos': productos})
@@ -94,27 +90,28 @@ def eliminar_prod(request, id):
 
 def editar_prod(request, id):
     id_producto = producto.objects.get(id=id)
-    
-    return render(request , 'admin_crud/editar_prod.html', {"id_producto": id_producto})
+    categorias = categoria.objects.all()  # Add this line to pass categories to the template
+    return render(request , 'admin_crud/editar_prod.html', {"id_producto": id_producto, "categorias": categorias})
+
 
 def actualizar_prod(request):
     if request.method == 'POST':
+        id = request.POST.get('id')  
         nombre = request.POST['txtNombre']
         descripcion = request.POST['txtDescripcion']
         precio = request.POST['txtPrecio']
-        img = request.FILES['imgUpload']  # Usa request.FILES para manejar la carga de archivos
+        img = request.FILES.get('imgUpload')  
         categoria_id = request.POST['txtCategoria']
 
-        # Obtén la instancia de la categoría desde la base de datos
         cat = categoria.objects.get(id=categoria_id)
 
-        producto.objects.filter(id=id).update(
-            nombre=nombre,
-            descripcion=descripcion,
-            precio=precio,
-            imagen=img,
-            categoria=cat
-        )
-        producto.save()
-        
-    return render(request , 'admin_crud/editar_prod.html')
+        producto_instance = producto.objects.get(id=id)
+        producto_instance.nombre = nombre
+        producto_instance.descripcion = descripcion
+        producto_instance.precio = precio
+        if img:  
+            producto_instance.imagen = img
+        producto_instance.categoria = cat
+        producto_instance.save()  
+    return render(request , 'admin_crud/editar_prod.html', {"id_producto": producto_instance, "categorias": categoria.objects.all()})
+
