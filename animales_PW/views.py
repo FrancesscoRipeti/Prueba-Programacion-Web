@@ -50,14 +50,14 @@ def base(request):
 def index(request):
     return render(request, 'index.html')
 
-def listar_admin(request):
+def listar_prod(request):
     categorias = categoria.objects.all()
     productos = producto.objects.all()
     context = {
         'categorias': categorias,
         'productos': productos,
     }
-    return render(request, 'admin_crud/listar_admin.html', context)
+    return render(request, 'admin_crud/listar_prod.html', context)
 
 def registrar_prod(request):
     if request.method == 'POST':
@@ -78,7 +78,7 @@ def registrar_prod(request):
         )
     categorias = categoria.objects.all()
     productos = producto.objects.all()  # Añade esto si necesitas pasar productos a la plantilla
-    return render(request, 'admin_crud/listar_admin.html', {'categorias': categorias, 'productos': productos})
+    return render(request, 'admin_crud/listar_prod.html', {'categorias': categorias, 'productos': productos})
 
 def eliminar_prod(request, id):
     id_producto = producto.objects.get(id=id)
@@ -86,7 +86,7 @@ def eliminar_prod(request, id):
 
     categorias = categoria.objects.all()
     productos = producto.objects.all()
-    return render(request, 'admin_crud/listar_admin.html', {'categorias': categorias, 'productos': productos})
+    return render(request, 'admin_crud/listar_prod.html', {'categorias': categorias, 'productos': productos})
 
 def editar_prod(request, id):
     id_producto = producto.objects.get(id=id)
