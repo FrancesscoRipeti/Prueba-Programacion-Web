@@ -76,42 +76,35 @@ def registrar_prod(request):
             imagen=img,
             categoria=cat
         )
-    categorias = categoria.objects.all()
-    productos = producto.objects.all()  # Añade esto si necesitas pasar productos a la plantilla
-    return render(request, 'admin_crud/listar_prod.html', {'categorias': categorias, 'productos': productos})
+    return redirect('listar_prod')
 
 def eliminar_prod(request, id):
     id_producto = producto.objects.get(id=id)
     id_producto.delete()
-
-    categorias = categoria.objects.all()
-    productos = producto.objects.all()
-    return render(request, 'admin_crud/listar_prod.html', {'categorias': categorias, 'productos': productos})
+    return redirect('listar_prod')
 
 def editar_prod(request, id):
-    id_producto = producto.objects.get(id=id)
-    categorias = categoria.objects.all()  # Add this line to pass categories to the template
-    return render(request , 'admin_crud/editar_prod.html', {"id_producto": id_producto, "categorias": categorias})
+    producto_instance = producto.objects.get(id=id)
+    categorias = categoria.objects.all()
+    return render(request, 'admin_crud/editar_prod.html', {"id_producto": producto_instance, "categorias": categorias})
 
-
-def actualizar_prod(request):
+def actualizar_prod(request, id):
     if request.method == 'POST':
-        id = request.POST.get('id')  
         nombre = request.POST['txtNombre']
         descripcion = request.POST['txtDescripcion']
         precio = request.POST['txtPrecio']
-        img = request.FILES.get('imgUpload')  
+        img = request.FILES.get('imgUpload')
         categoria_id = request.POST['txtCategoria']
 
         cat = categoria.objects.get(id=categoria_id)
-
         producto_instance = producto.objects.get(id=id)
         producto_instance.nombre = nombre
         producto_instance.descripcion = descripcion
         producto_instance.precio = precio
-        if img:  
+        if img:
             producto_instance.imagen = img
         producto_instance.categoria = cat
-        producto_instance.save()  
-    return render(request , 'admin_crud/editar_prod.html', {"id_producto": producto_instance, "categorias": categoria.objects.all()})
+        producto_instance.save()
 
+        return redirect('listar_prod')  # Reemplaza 'listar_prod' con el nombre adecuado de la vista
+    return redirect('listar_prod')
