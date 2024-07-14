@@ -8,23 +8,8 @@
 {% block content %}
 <section>
     <div class="container-fluid">
-        <div class="row">
-            <!-- Sidebar -->
-            <div class="col-xl-2">
-                <div class="sidebar">
-                    <!-- Contenido del sidebar -->
-                    <h2>Categorías</h2>
-                    <ul>
-                        <!-- Se pueden agrupar los artículos en subgrupos o categorías -->
-                        <li><a href="#articulo1">Alimento</a></li>
-                        <li><a href="#articulo2">Juguetes</a></li>
-                        <li><a href="#articulo2">Salud y
-                                Bienestar</a></li>
-                    </ul>
-                </div>
-            </div>
+        <div class="row justify-content-center">
             <!-- Main Content -->
-
             <div class="col-sm-8">
                 <div class="gran-container-tienda" id="container-tienda_2">
                     <div class="contenido-tienda" id="lista1">
@@ -36,8 +21,7 @@
                                 <p>{{ prod.descripcion }}</p>
                                 <p class="precio">${{ prod.precio }}</p>
                                 <p class="categoria">Categoría: {{ prod.categoria.nombre }}</p>
-                                <a href="#" class="agregar-carrito btn-3" data-id="{{ prod.id }}">AGREGAR AL
-                                    CARRITO</a>
+                                <a href="#" class="agregar-carrito btn-3" data-id="{{ prod.id }}">AGREGAR AL CARRITO</a>
                             </div>
                         </div>
                         {% endfor %}
@@ -45,7 +29,9 @@
                 </div>
             </div>
         </div>
+    </div>
 </section>
+
 <section>
     <div class="modal fade" id="modalResumenCarrito" tabindex="-1" aria-labelledby="modalResumenCarritoLabel"
         aria-hidden="true">
