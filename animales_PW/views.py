@@ -76,6 +76,7 @@ def registrar_prod(request):
             imagen=img,
             categoria=cat
         )
+        messages.success(request, 'Producto creado con éxito.')  # Agrega el mensaje de éxito
     return redirect('listar_prod')
 
 def eliminar_prod(request, id):
